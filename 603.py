@@ -1,0 +1,14 @@
+'''Most Left Digit
+Write a function that takes a string as an argument and returns the left most integer in the string.
+Examples
+left_digit("TrAdE2W1n95!") ➞ 2
+left_digit("V3r1ta$") ➞ 3
+left_digit("U//DertHe1nflu3nC3") ➞ 1
+left_digit("J@v@5cR1PT") ➞ 5'''
+
+string="U//DertHe1nflu3nC3"
+
+for i in string:
+    if i.isdigit():
+        print(i)
+        break

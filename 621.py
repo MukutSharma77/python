@@ -1,0 +1,20 @@
+'''Is the Number Symmetrical?
+Create a function that takes a number as an argument and returns True or False depending on whether the number is symmetrical or not. A number is symmetrical when it is the same as its reverse.
+Examples
+is_symmetrical(7227) ➞ True
+is_symmetrical(12567) ➞ False
+is_symmetrical(44444444) ➞ True
+is_symmetrical(9939) ➞ False
+is_symmetrical(1112111) ➞ True
+'''
+
+num=9939
+number=num
+
+rev=0
+while number:
+    mod=number%10
+    rev=(rev*10)+mod
+    number//=10
+
+print(num==rev)
